@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<title>Lista de Personagens Marvel</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body id="html-doc">
+	<header>
+		<div class="navbar-white">
+			<div class="row">
+				<div class="col-4 flex d-row align-items-center justify-content-start">
+					<img class="logo" src="assets/img/objective-logo.png" alt="Objective logo">
+				</div>
+				<div class="col-8 flex d-row align-items-center justify-content-end">
+					<div class="info flex d-row align-items-center justify-content-end">
+						<h4 class="info-name"><span>Patrícia Ferreira</span> Teste de Front-end</h4>
+						<a class="info-btn" href="#">
+							CB
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12" id="cabecalho-lista">
+					<h1 class="title">Busca de personagens</h1>
+					<div class="form">
+						<label class="label-form">Nome do personagem</label>
+						<div class="form-group flex d-row align-items-center">
+							<input type="text" name="name-personagem" id="name-personagem" placeholder="Search">
+							<button class="btn btn-search" onclick="getCharacterList();">
+								<img src="assets/img/search.svg">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-results row d-collumn">
+				<div class="col-12">
+					<ul class="list-inline">
+						<h4 class="list-name">Personagem</h4>
+						<h4 class="list-name mobile">Séries</h4>
+						<h4 class="list-name mobile">Eventos</h4>
+					</ul>
+				</div>
+				<div class="col-12" id="lista-herois">
+
+				</div>	
+			</div>
+		</div>
+	</header>
+	<section id="detalhe">
+		
+	</section>
+
+<script src="assets/js/request.js"></script>
+<script src="assets/js/data.js"></script>
+<script>
+    getCharacterList();
+</script>
+</body>
+</html>
